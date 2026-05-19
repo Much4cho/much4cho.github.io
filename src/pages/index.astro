@@ -1,18 +1,163 @@
 ---
 import '../styles/global.css';
+
+const title = 'Piotr Sulzycki — Software developer, Copenhagen';
+const description =
+  'Software developer, ~8 years .NET. Based in Copenhagen. Building agentic AI tooling on the side.';
+const canonical = 'https://much4cho.github.io/';
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Piotr Sulzycki</title>
-    <meta name="robots" content="noindex" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
-  <body class="min-h-screen flex items-center justify-center bg-neutral-50 text-neutral-900 font-sans">
-    <main class="max-w-md px-6 text-center">
-      <h1 class="text-2xl font-medium tracking-tight">Piotr Sulzycki</h1>
-      <p class="mt-2 text-sm text-neutral-500">Site under construction.</p>
-    </main>
+  <body class="min-h-screen bg-neutral-50 text-neutral-900 font-sans antialiased">
+    <div class="mx-auto max-w-2xl px-6 py-16 sm:py-24">
+
+      <!-- Above the fold -->
+      <header class="mb-16">
+        <h1 class="text-3xl sm:text-4xl font-medium tracking-tight text-neutral-900">
+          Piotr Sulzycki
+        </h1>
+        <p class="mt-3 text-lg text-neutral-700 leading-relaxed">
+          Software developer, ~8 years .NET. An engineer who applies the same
+          analytical lens to people and organizations that he applies to systems.
+        </p>
+        <p class="mt-2 text-sm text-neutral-500">
+          Based in Copenhagen, Denmark. Working in English.
+        </p>
+      </header>
+
+      <main class="space-y-14">
+
+        <!-- What I do / what I'm looking for -->
+        <section>
+          <h2 class="text-sm font-semibold uppercase tracking-wider text-neutral-500 mb-4">
+            What I'm doing
+          </h2>
+          <div class="space-y-4 text-neutral-800 leading-relaxed">
+            <p>
+              Currently full-time on a long-running .NET microservices engagement
+              for a European energy-sector client &mdash; wind turbine design,
+              then energy supply, meter-points, field-data auditing and reporting.
+              C#, Blazor, SQL Server, Docker, RabbitMQ.
+            </p>
+            <p>
+              Looking for the next role on the customer-facing engineer track at
+              B2B SaaS &mdash; Solutions Engineer, Forward-Deployed Engineer,
+              Pre-Sales Engineer, Technical Account Manager. Engineering depth
+              with direct customer contact, problems that don't end at the API
+              boundary.
+            </p>
+            <p>
+              In parallel, exploring helping small and medium businesses adopt
+              practical AI tooling. Discovery stage; not a launched practice yet.
+            </p>
+          </div>
+        </section>
+
+        <!-- Background -->
+        <section>
+          <h2 class="text-sm font-semibold uppercase tracking-wider text-neutral-500 mb-4">
+            Background
+          </h2>
+          <ul class="space-y-4 text-neutral-800 leading-relaxed">
+            <li>
+              <span class="font-medium text-neutral-900">
+                Clever Grapes &middot; Software Developer
+              </span>
+              <span class="block text-sm text-neutral-500">
+                2021 &ndash; present &middot; energy-sector microservices for
+                European clients
+              </span>
+            </li>
+            <li>
+              <span class="font-medium text-neutral-900">
+                Avanade &middot; Software Engineer
+              </span>
+              <span class="block text-sm text-neutral-500">
+                Kraków &middot; .NET + AngularJS for a US-based client; two
+                promotions across ~19 months
+              </span>
+            </li>
+            <li>
+              <span class="font-medium text-neutral-900">
+                Goyello &middot; Software Developer
+              </span>
+              <span class="block text-sm text-neutral-500">
+                Gdańsk &middot; first role out of high school, ~2 years
+              </span>
+            </li>
+          </ul>
+          <p class="mt-6 text-sm text-neutral-600 leading-relaxed">
+            B.Eng., Computer Science &mdash; AGH University of Science and
+            Technology, Kraków (2023). Microsoft 70-483 (Programming in C#),
+            2018. IELTS Academic 8.0. Polish native; basic Spanish.
+          </p>
+        </section>
+
+        <!-- Side projects -->
+        <section>
+          <h2 class="text-sm font-semibold uppercase tracking-wider text-neutral-500 mb-4">
+            What I'm building on the side
+          </h2>
+          <div class="space-y-4 text-neutral-800 leading-relaxed">
+            <p>
+              A multi-project agentic workspace driven by Claude Code &mdash; a
+              coordinator that routes work to peer projects (executive
+              assistant, automation sandbox, knowledge wiki, others), each with
+              its own context, skills, and sub-agents. Real orchestration: tool
+              use, file mutation, conditional branching, multi-agent dispatch.
+            </p>
+            <p>
+              Inside that workspace, a <code class="font-mono text-sm bg-neutral-100 px-1.5 py-0.5 rounded">/job-fit</code>
+              skill: an end-to-end agentic career copilot that reads workspace
+              context, asks gap-fill questions, and produces tailored artifacts.
+              What an experienced .NET engineer does when he picks up modern AI
+              tooling and treats it like any other system to build with.
+            </p>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section>
+          <h2 class="text-sm font-semibold uppercase tracking-wider text-neutral-500 mb-4">
+            Contact
+          </h2>
+          <ul class="space-y-2 text-neutral-800">
+            <li>
+              <span class="text-neutral-500">Email &middot;</span>
+              <span class="font-mono text-sm">[email here]</span>
+            </li>
+            <li>
+              <span class="text-neutral-500">LinkedIn &middot;</span>
+              <a
+                href="https://linkedin.com/in/piotrsulzycki/"
+                class="underline decoration-neutral-400 underline-offset-4 hover:decoration-neutral-900 transition"
+                >linkedin.com/in/piotrsulzycki</a
+              >
+            </li>
+            <li>
+              <span class="text-neutral-500">GitHub &middot;</span>
+              <a
+                href="https://github.com/much4cho"
+                class="underline decoration-neutral-400 underline-offset-4 hover:decoration-neutral-900 transition"
+                >github.com/much4cho</a
+              >
+            </li>
+          </ul>
+        </section>
+
+      </main>
+
+      <footer class="mt-20 pt-8 border-t border-neutral-200 text-sm text-neutral-500">
+        Copenhagen &middot; {new Date().getFullYear()}
+      </footer>
+    </div>
   </body>
 </html>
